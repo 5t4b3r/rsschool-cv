@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-<img class="my-photo">
-<h1 class="title">Vitalii Kiktov</h1>
-<h2 class="title-description">Beginning Frontend Developer</h2>
-<nav class="navigation">
-<ul class="navigation__list">
-<li class="navigation__item">
-<a class="navigation__link">About myself</a>
-</li>
-<li class="navigation__item">
-<a class="navigation__link">Skills and Proficiency</a>
-</li>
-<li class="navigation__item">
-<a class="navigation__link">Code example</a>
-</li>
-<li class="navigation__item">
-<a class="navigation__link">Courses</a>
-</li>
-</ul>
-</nav>
-</header>
-<main class="main-index">
-<section class="about">
-<h2 class="about__title">About myself:</h2>
-<p class="about__text">I am currently working as a store director. I have been interested in web development and everything related to the world of technology for a long time.</p>
-<p class="about__text">This year I took an initial course at HTMLAcademy, and now I am studying at <a>RS School</a> and a second course at HTMLAcademy.</p>
-<p class="about__text">After graduation, I plan to change the type of activity and become a frontend developer.</p>
-</section>
-<section class="skills">
-<h2 class="skills__title">Skills and Proficiency:</h2>
-<ul class="skills__list">
-<li class="skills__item">HTML</li>
-<li class="skills__item">CSS</li>
-<li class="skills__item">Git and GitHub</li>
-<li class="skills__item">VS Code</li>
-<li class="skills__item">Figma</li>
-<li class="skills__item">JavaScript</li>
-</ul>
-</section>
-<section class="code"></section>
-<section class="courses"></section>
-<section class="languages">
-<h2 class="languages__title">Languages:</h2>
-<ul class="languages__list">
-<li class="languages__item"></li>
-<li class="languages__item"></li>
-<li class="languages__item"></li>gi
-</ul>
-</section>
-</main>
-<footer>
-<section class="contacts"></section>
-</footer>
+    <header>
+        <img class="my-photo" src="https://i.ibb.co/4FPzymC/Facebook-Cover-851x315-px.jpg" alt="my photo" width="155"  height="155">
+        <h1 class="title">Vitalii Kiktov</h1>
+        <h2 class="title-description">Beginning Frontend Developer</h2>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link">About myself</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link">Skills and Proficiency</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link">Code example</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link">Courses</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-index">
+        <section class="about">
+            <h2 class="about__title">About myself:</h2>
+            <p class="about__text">I am currently working as a store director. I have been interested in web development
+                and everything related to the world of technology for a long time.</p>
+            <p class="about__text">This year I took an initial course at HTMLAcademy, and now I am studying at <a href="https://rs.school/">RS
+                    School</a> and a second course at HTMLAcademy.</p>
+            <p class="about__text">After graduation, I plan to change the type of activity and become a frontend
+                developer.</p>
+        </section>
+        <section class="skills">
+            <h2 class="skills__title">Skills and Proficiency:</h2>
+            <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">Git</li>
+                <li class="skills__item">VS Code</li>
+                <li class="skills__item">Figma</li>
+                <li class="skills__item">JavaScript</li>
+            </ul>
+        </section>
+        <section class="code">
+            <h2 class="code__title">Code example:</h2>
+            <p class="code__text"><a class="code__link" href="https://www.codewars.com/kata/5ad0d8356165e63c140014d4">Codewars</a> task:</p>
+            <pre> 
+            function finalGrade (exam, projects) {
+                if (exam > 90 || projects > 10) return 100;
+                else if (exam > 75 && projects >= 5) return 90;
+                else if (exam > 50 && projects >= 2) return 75;
+                else return 0;
+                }
+            </pre>
+        </section>
+        <section class="courses">
+            <h2 class="courses__title">Courses:</h2>
+            <ul>
+                <li><a href="https://htmlacademy.ru/intensive/htmlcss">HTML and CSS. Professional website layout</a></li>
+                <li><a href="https://htmlacademy.ru/intensive/adaptive">HTML and CSS. Responsive layout and automation</a></li>
+                <li><a href="https://rs.school/">RS School JS/FE Pre-School 2022</a>(in progress)</li>
+            </ul>
+            <img class="courses__img">
+        </section>
+        <section class="languages">
+            <h2 class="languages__title">Languages:</h2>
+            <ul class="languages__list">
+                <li class="languages__item">Russian - Native</li>
+                <li class="languages__item">Ukrainian - Native</li>
+                <li class="languages__item">English - A1</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="contacts">
+            <h2 class="contacts__title">Contact information:</h2>
+            <ul class="contacts_list">
+                <li class="contacts__item">E-mail: vitalii.kiktov@gmail.com
+                </li>
+                <li class="contacts__item">Telegram: @Staber78</li>
+                <li class="contacts__item">Dicsord: Vitalii Kiktov (@5t4b3r) </li>
+                <li class="contacts__item">Phone: +79992040079</li>
+                <li class="contacts__item">Address: Saint Petersburg, Russia</li>
+            </ul>
+        </section>
+    </footer>
 </body>
+
 </html>
