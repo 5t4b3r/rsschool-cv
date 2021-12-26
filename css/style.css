@@ -1,35 +1,153 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
-  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
   
-  @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
 html {
-    height: 100%;
-    background-color:#F2C216;
+  background-color: #F2C216;
 }
 
 body {
-    margin: 0 auto;
-    display: flex;
-    width: 1200px;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    background-color: #343945;
-    box-shadow: 0 0 15px 15px #aa880e;
+  margin: 20px auto;
+  min-height: 100%;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: #343945;
+  box-shadow: 0 0 10px 10px #aa880e;
   }
-  
+
+/* grid page */
+
+.two-columns {
+  display: flex;
+  flex-grow: 1;
+}
+
+.left-container {
+  padding-left: 20px;
+  width: 40%;
+  border-bottom: 5px solid #F2C216;
+}
+
+.right-container {
+  padding-left: 20px;
+  width: 60%;
+  background-color: #253E50;
+  border-left: 5px solid #F2C216;
+  border-top: 5px solid #F2C216;
+}
+
+/* Navigation */
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation__item {
+  padding: 20px;
+}
+
+.navigation__link {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  height: 1px;
+  border-radius: 5px;
+  background: #F2C216;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+/* header */
+
+.main-header {
+  text-align: center;
+  background-color: #343945;
+}
+
+.my-photo {
+  margin: 20px;
+  border: 8px solid #F2C216;
+  border-radius: 50%;
+}
+
+.title {
+  text-shadow: 1px 1px 2px black;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.title-description {
+  margin-bottom: 20px;
+}
+
+/* main */
+
+.block__title {
+  text-shadow: 1px 1px 2px black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  width: 220px;
+  height: 24px;
+  border-radius: 5px;
+  background: #F2C216;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.block__title::after {
+  top: 11px;
+  left: 220px;
+  position: absolute;
+  content: " ";
+  width: 150px;
+  border: 1px solid #F2C216;
+}
+
+/* Skills */
+
+.skills__list {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__item {
+  margin-right: 20px;
+}
+
+.skills__item:last-child {
+  margin: 0;
+}
+
+/* Courses */
+
+.courses__title {
+
+}
+.footer {
+  background-color: #253E50;
+}
