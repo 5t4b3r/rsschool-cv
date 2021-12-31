@@ -139,11 +139,35 @@ body {
 
 /* Contacts */
 
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .contacts__item {
   padding-bottom: 15px;
 }
 
-/* Skills */
+.contacts__img {
+
+}
+
+.contacts__description {
+  padding-left: 25px;
+}
+
+/* Languages */
+
+.languages__list {
+  padding: 20px 0;
+}
+
+.languages__item {
+  padding-bottom: 10px;
+}
+
+  /* Skills */
 
 .skills__list {
   padding: 20px 0;
@@ -159,12 +183,45 @@ body {
   margin: 0;
 }
 
+/* About */
+
+.about_link {
+  color: #960766;
+}
+
 /* Courses */
 
 .courses__title {
 
 }
+
+.courses__item {
+  padding-bottom: 20px;
+}
+
+.courses__link {
+  color: #253E50;
+}
+
+/* Code example */
+
+.code__pre {
+  color: #FFFFFF;
+  background-color: #343945;
+  margin-right: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+
 .footer {
   color: #aa880e;
   background-color: #FFFFFF;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
