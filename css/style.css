@@ -31,14 +31,8 @@ body {
   background-color: #ffffff;
 }
 
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .main-container {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 /* grid page */
@@ -152,13 +146,13 @@ body {
 /* Skills */
 
 .skills__list {
-  padding: 20px 0px;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .skills__item {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .skills__item:last-child {
@@ -171,5 +165,6 @@ body {
 
 }
 .footer {
+  color: #aa880e;
   background-color: #FFFFFF;
 }
