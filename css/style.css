@@ -19,19 +19,21 @@ html {
 }
 
 body {
-  margin: 2px auto;
-  min-height: 100vh;
-  width: 1024px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 1024px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
   box-shadow: 0 0 10px 10px #aa880e;
-  background-color: #343945;
-  }
+  background-color: #ffffff;
+}
+
+.main-container {
+  flex: 1 0 auto;
+}
 
 /* grid page */
 
@@ -49,7 +51,7 @@ body {
 .right-container {
   color: #253E50;
   padding-left: 20px;
-  width: 60%;
+  width: 61%;
   background-color:#FFFFFF;
   border-left: 5px solid #F2C216;
   border-top: 5px solid #F2C216;
@@ -135,27 +137,109 @@ body {
   border: 1px solid #F2C216;
 }
 
-/* Skills */
+/* Contacts */
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contacts__item {
+  padding-bottom: 15px;
+}
+
+.contacts__img {
+
+}
+
+.contacts__description {
+  padding-left: 25px;
+}
+
+/* Education */
+
+.education__list {
+  padding: 25px 0;
+}
+
+.education__item {
+  padding-bottom: 15px;
+}
+
+  /* Skills */
 
 .skills__list {
-  padding: 20px 0px;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .skills__item {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .skills__item:last-child {
   margin: 0;
 }
 
+/* About */
+
+.about_link {
+  color: #ec7a1d;
+  text-shadow: 1px 1px 2px black;
+}
+
+.about__text {
+  padding-right: 25px;
+  padding-top: 20px;
+}
+ 
 /* Courses */
 
-.courses__title {
-
+.courses__item {
+  padding-bottom: 20px;
 }
+
+.courses__link {
+  color: #253E50;
+}
+
+
+/* Code example */
+
+.code__text {
+  padding-bottom: 25px;
+}
+
+
+
+.code__pre {
+  color: #FFFFFF;
+  background-color: #343945;
+  margin-right: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+
 .footer {
+  color: #aa880e;
   background-color: #FFFFFF;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer__year {
+  font-size: 38px;
+  color: #000000;
+}
+
+.year {
+  color: #F2C216;
 }
