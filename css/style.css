@@ -27,7 +27,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  box-shadow: 0 0 10px 10px #aa880e;
   background-color: #ffffff;
 }
 
@@ -221,6 +220,7 @@ body {
 /* Footer */
 
 .footer {
+  padding-top: 25px;
   color: #aa880e;
   background-color: #FFFFFF;
 }
